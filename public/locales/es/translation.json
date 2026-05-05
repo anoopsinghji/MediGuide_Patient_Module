@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "symptom_checker": "Verificador de síntomas",
+    "find_doctors": "Buscar médicos",
+    "appointments": "Citas",
+    "prescriptions": "Recetas",
+    "chat": "Chat",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión",
+    "login": "Iniciar sesión",
+    "join_now": "Únete ahora"
+  },
+  "home": {
+    "hero": {
+      "tagline": "ATENCIÓN MÉDICA IMPULSADA POR IA PARA TODOS LOS VIAJEROS",
+      "title": "Encuentra médicos de confianza",
+      "subtitle": "Dondequiera que viajes",
+      "description": "Navegación de atención médica premium adaptada para viajeros internacionales en India. Soporte multilingüe, costos transparentes y redes clínicas verificadas.",
+      "search_prompt": "¿Qué te molesta hoy?",
+      "search_placeholder": "ej. \"Tengo fiebre y dolor de estómago\"",
+      "analyze_button": "Analizar",
+      "verified_providers": "Proveedores verificados",
+      "pan_india": "Cobertura en todo el país"
+    }
+  }
+}

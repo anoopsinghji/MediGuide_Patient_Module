@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "symptom_checker": "Vérificateur de symptômes",
+    "find_doctors": "Trouver des médecins",
+    "appointments": "Rendez-vous",
+    "prescriptions": "Ordonnances",
+    "chat": "Discuter",
+    "profile": "Profil",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "join_now": "Rejoignez-nous"
+  },
+  "home": {
+    "hero": {
+      "tagline": "SOINS DE SANTÉ PROPULSÉS PAR L'IA POUR CHAQUE VOYAGEUR",
+      "title": "Trouvez des médecins de confiance",
+      "subtitle": "Partout où vous voyagez",
+      "description": "Navigation médicale haut de gamme adaptée aux voyageurs internationaux en Inde. Assistance multilingue, coûts initiaux et réseaux cliniques vérifiés.",
+      "search_prompt": "Qu'est-ce qui vous dérange aujourd'hui ?",
+      "search_placeholder": "ex. \"J'ai de la fièvre et des maux d'estomac\"",
+      "analyze_button": "Analyser",
+      "verified_providers": "Fournisseurs vérifiés",
+      "pan_india": "Couverture pane-indienne"
+    }
+  }
+}

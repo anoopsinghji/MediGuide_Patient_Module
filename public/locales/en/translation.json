@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "home": "Home",
+    "symptom_checker": "Symptom Checker",
+    "find_doctors": "Find Doctors",
+    "appointments": "Appointments",
+    "prescriptions": "Prescriptions",
+    "chat": "Chat",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "join_now": "Join Now"
+  },
+  "home": {
+    "hero": {
+      "tagline": "AI-POWERED HEALTHCARE FOR EVERY TRAVELER",
+      "title": "Find Trusted Doctors",
+      "subtitle": "Wherever You Travel",
+      "description": "Premium healthcare navigation tailored for international travelers in India. Multilingual support, upfront costs, and verified clinical networks.",
+      "search_prompt": "What's bothering you today?",
+      "search_placeholder": "e.g. \"I have a fever and stomach pain\"",
+      "analyze_button": "Analyze",
+      "verified_providers": "Verified Providers",
+      "pan_india": "Pan-India Coverage"
+    }
+  }
+}

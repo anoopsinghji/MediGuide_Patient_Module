@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Cyan gradient (horizontal) -->
+    <linearGradient id="gradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+    <!-- Teal gradient (vertical) -->
+    <linearGradient id="gradTeal" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle (optional, but looks good as an app icon boundary) -->
+  <rect x="32" y="32" width="448" height="448" rx="100" fill="#f8fafc" />
+
+  <!-- The Modern Cross / Guide Pin -->
+  <g filter="url(#shadow)">
+    <!-- Horizontal Pill -->
+    <rect x="136" y="216" width="240" height="80" rx="40" fill="url(#gradCyan)" opacity="0.9" />
+    <!-- Vertical Pill -->
+    <rect x="216" y="136" width="80" height="240" rx="40" fill="url(#gradTeal)" opacity="0.9" />
+    
+    <!-- White center core -->
+    <circle cx="256" cy="256" r="24" fill="white" />
+  </g>
+</svg>
