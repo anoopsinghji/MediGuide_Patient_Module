@@ -29,14 +29,28 @@ const SIGNALING_BASE_FALLBACK = API_BASE_URL.replace(/\/api\/?$/, '');
 const resolveSignalingUrl = (url: string) => {
   if (!url) return SIGNALING_BASE_FALLBACK;
 
-  const isLoopback = /localhost|127\.0\.0\.1/i.test(url);
-  const usingRemoteFrontend = typeof window !== 'undefined' && !/localhost|127\.0\.0\.1/i.test(window.location.hostname);
+  const usingSecureFrontend = typeof window !== 'undefined' && window.location.protocol === 'https:';
 
-  if (isLoopback && usingRemoteFrontend) {
-    return SIGNALING_BASE_FALLBACK;
+  try {
+    const parsedUrl = new URL(url);
+    const isLoopback = /localhost|127\.0\.0\.1/i.test(parsedUrl.hostname);
+
+    if (isLoopback && usingSecureFrontend) {
+      return SIGNALING_BASE_FALLBACK;
+    }
+
+    if (usingSecureFrontend && (parsedUrl.protocol === 'http:' || parsedUrl.protocol === 'ws:')) {
+      parsedUrl.protocol = parsedUrl.protocol === 'ws:' ? 'wss:' : 'https:';
+    }
+
+    return parsedUrl.toString().replace(/\/$/, '');
+  } catch (_error) {
+    if (/localhost|127\.0\.0\.1/i.test(url) && usingSecureFrontend) {
+      return SIGNALING_BASE_FALLBACK;
+    }
+
+    return url;
   }
-
-  return url;
 };
 
 export function useDoctorVideoConsultation({
